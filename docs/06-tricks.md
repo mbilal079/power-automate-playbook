@@ -75,6 +75,7 @@ Build an array variable of `{ "Name": ..., "ContentBytes": ... }` objects and pa
 }
 ```
 
+> [!NOTE]
 > Pass the file action's `body()` straight through. That's the binary content the email action expects.
 
 ## Generate a PDF from HTML, with no premium connector

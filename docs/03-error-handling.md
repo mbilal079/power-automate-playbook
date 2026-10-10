@@ -60,6 +60,7 @@ coalesce(
 
 Failed action name: `first(body('Filter_failed'))?['name']`
 
+> [!NOTE]
 > `result()` only lists actions **directly** inside the scope. Wrap loops in their own scope if you need the failure detail from inside them.
 
 ## Notify with a link to the failed run

@@ -32,6 +32,7 @@ body('Run_a_Child_Flow')?['tier']
 body('Run_a_Child_Flow')?['discount']
 ```
 
+> [!NOTE]
 > Output names are lower-cased in the response body. If an output isn't found, check the casing in run history.
 
 ## Patterns

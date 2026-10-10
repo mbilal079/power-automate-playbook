@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Power Automate: Expressions, Tips and Best Practices">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B3A8C"/>
+      <stop offset="0.55" stop-color="#0F6CBD"/>
+      <stop offset="1" stop-color="#2AA0F6"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <!-- soft circles -->
+  <circle cx="1080" cy="40" r="120" fill="#FFFFFF" opacity="0.06"/>
+  <circle cx="1150" cy="260" r="90" fill="#FFFFFF" opacity="0.05"/>
+  <circle cx="70" cy="280" r="70" fill="#FFFFFF" opacity="0.05"/>
+
+  <!-- flow diagram on the right -->
+  <g transform="translate(830,70)" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">
+    <rect x="0" y="0" width="230" height="44" rx="10" fill="url(#chip)" stroke="#FFFFFF" stroke-opacity="0.35"/>
+    <circle cx="24" cy="22" r="9" fill="#FFB900"/>
+    <text x="44" y="27" fill="#FFFFFF">When a row is added</text>
+    <path d="M115 44 V64" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2"/>
+    <rect x="0" y="64" width="230" height="44" rx="10" fill="url(#chip)" stroke="#FFFFFF" stroke-opacity="0.35"/>
+    <circle cx="24" cy="86" r="9" fill="#6FE3B5"/>
+    <text x="44" y="91" fill="#FFFFFF" font-family="Consolas, Menlo, monospace" font-size="14">formatDateTime(…)</text>
+    <path d="M115 108 V128" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="2"/>
+    <rect x="0" y="128" width="230" height="44" rx="10" fill="url(#chip)" stroke="#FFFFFF" stroke-opacity="0.35"/>
+    <circle cx="24" cy="150" r="9" fill="#FF7A7A"/>
+    <text x="44" y="155" fill="#FFFFFF">Try · Catch · Finally</text>
+  </g>
+
+  <!-- title -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="60" y="92" fill="#BFE0FF" font-size="20" font-weight="600" letter-spacing="3">MICROSOFT POWER AUTOMATE</text>
+    <text x="60" y="150" fill="#FFFFFF" font-size="52" font-weight="700">Expressions, Tips</text>
+    <text x="60" y="208" fill="#FFFFFF" font-size="52" font-weight="700">&amp; Best Practices</text>
+    <text x="60" y="252" fill="#DCEEFF" font-size="19">Copy-paste expressions · Dataverse · Error handling · Child flows · Tricks</text>
+  </g>
+</svg>

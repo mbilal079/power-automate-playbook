@@ -60,6 +60,7 @@ To **clear** a lookup, set the field to `null` in an expression. Leaving the fie
 | Date range | `createdon ge @{addDays(utcNow(),-7)}` |
 | Combine | `statecode eq 0 and (revenue gt 100000 or numberofemployees gt 50)` |
 
+> [!NOTE]
 > Always fill in **Select columns** (for example `name,emailaddress1`). Returning every column is slow and makes run history noisy.
 
 ## FetchXML for aggregates and joins

@@ -3,7 +3,8 @@
 The expressions you reach for every day, grouped by type. Paste them into the **Expression** tab of the dynamic
 content panel, or wrap them in `@{ }` inside text fields.
 
-> **Tip:** always use the safe-navigation operator `?[...]`, as in `outputs('Get_item')?['body/Title']`.
+> [!TIP]
+> Always use the safe-navigation operator `?[...]`, as in `outputs('Get_item')?['body/Title']`.
 > It returns `null` instead of failing when a property is missing.
 
 ---
@@ -30,6 +31,7 @@ content panel, or wrap them in `@{ }` inside text fields.
 | Format currency | `formatNumber(1234.5, 'C2', 'en-US')` | `$1,234.50` |
 | Thousands separator | `formatNumber(1234567, 'N0')` | `1,234,567` |
 
+> [!NOTE]
 > A text field that starts with `@` is treated as an expression. To start text with a literal `@`, write `@@`.
 
 ## Dates & times
@@ -54,6 +56,7 @@ All Power Automate times are **UTC**. Convert at the edge, when you display or c
 | Unix timestamp → date | `addSeconds('1970-01-01T00:00:00Z', int(variables('Epoch')))` |
 | Date → Unix timestamp | `div(sub(ticks(utcNow()), ticks('1970-01-01T00:00:00Z')), 10000000)` |
 
+> [!NOTE]
 > `ticks()` counts 100-nanosecond intervals, so one day = `864000000000` ticks.
 
 ## Numbers & math
