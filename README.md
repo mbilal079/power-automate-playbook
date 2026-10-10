@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Power Automate: Expressions, Tips & Best Practices" width="100%">
+  <img src="assets/banner.svg" alt="Power Automate Playbook" width="100%">
 </p>
+
+<h1 align="center">Power Automate Playbook</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Power%20Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white" alt="Power Automate">

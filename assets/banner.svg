@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Power Automate: Expressions, Tips and Best Practices">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Power Automate Playbook: expressions, tips and best practices">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B3A8C"/>
@@ -34,9 +34,9 @@
 
   <!-- title -->
   <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-    <text x="60" y="92" fill="#BFE0FF" font-size="20" font-weight="600" letter-spacing="3">MICROSOFT POWER AUTOMATE</text>
-    <text x="60" y="150" fill="#FFFFFF" font-size="52" font-weight="700">Expressions, Tips</text>
-    <text x="60" y="208" fill="#FFFFFF" font-size="52" font-weight="700">&amp; Best Practices</text>
+    <text x="60" y="92" fill="#BFE0FF" font-size="20" font-weight="600" letter-spacing="3">EXPRESSIONS · TIPS · BEST PRACTICES</text>
+    <text x="60" y="150" fill="#FFFFFF" font-size="58" font-weight="700">Power Automate</text>
+    <text x="60" y="212" fill="#FFB900" font-size="58" font-weight="700">Playbook</text>
     <text x="60" y="252" fill="#DCEEFF" font-size="19">Copy-paste expressions · Dataverse · Error handling · Child flows · Tricks</text>
   </g>
 </svg>
