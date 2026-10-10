@@ -57,23 +57,30 @@
 
 ## ⭐ The 15 expressions I use most
 
-| | Expression | What you get |
-|:--|:--|:--|
-| ![Dates](https://img.shields.io/badge/Dates-0F6CBD?style=flat-square) | `formatDateTime(utcNow(), 'yyyy-MM-dd')` | Today: `2026-10-10` |
-| ![Dates](https://img.shields.io/badge/Dates-0F6CBD?style=flat-square) | `convertTimeZone(utcNow(), 'UTC', 'Pakistan Standard Time', 'dd/MM/yyyy HH:mm')` | Local time: `10/10/2026 18:30` |
-| ![Dates](https://img.shields.io/badge/Dates-0F6CBD?style=flat-square) | `addDays(utcNow(), -7)` | The date a week ago |
-| ![Text](https://img.shields.io/badge/Text-8661C5?style=flat-square) | `last(split(item()?['Email'], '@'))` | Email domain: `contoso.com` |
-| ![Text](https://img.shields.io/badge/Text-8661C5?style=flat-square) | `decodeUriComponent('%0A')` | A new line in text |
-| ![Text](https://img.shields.io/badge/Text-8661C5?style=flat-square) | `formatNumber(1234.5, 'C2', 'en-US')` | Currency: `$1,234.50` |
-| ![Logic](https://img.shields.io/badge/Logic-CA5010?style=flat-square) | `coalesce(item()?['Nickname'], item()?['FirstName'], 'there')` | The first value that isn't empty |
-| ![Logic](https://img.shields.io/badge/Logic-CA5010?style=flat-square) | `if(empty(x), 'N/A', x)` | A default for blanks |
-| ![Arrays](https://img.shields.io/badge/Arrays-107C10?style=flat-square) | `length(body('Filter_array'))` | Number of matching items |
-| ![Arrays](https://img.shields.io/badge/Arrays-107C10?style=flat-square) | `join(body('Select_emails'), ';')` | Array → `a@x.com;b@y.com` |
-| ![Arrays](https://img.shields.io/badge/Arrays-107C10?style=flat-square) | `split('a,b,c', ',')` | Text → `["a","b","c"]` |
-| ![Arrays](https://img.shields.io/badge/Arrays-107C10?style=flat-square) | `union(variables('Arr'), variables('Arr'))` | Duplicates removed |
-| ![Dataverse](https://img.shields.io/badge/Dataverse-038387?style=flat-square) | `first(outputs('List_rows')?['body/value'])?['name']` | First row, no *Apply to each* |
-| ![Dataverse](https://img.shields.io/badge/Dataverse-038387?style=flat-square) | `item()?['_ownerid_value@OData.Community.Display.V1.FormattedValue']` | Lookup **display name**, not the GUID |
-| ![Flow](https://img.shields.io/badge/Flow-D13438?style=flat-square) | `concat('https://make.powerautomate.com/environments/', workflow()?['tags']?['environmentName'], '/flows/', workflow()?['name'], '/runs/', workflow()?['run']?['name'])` | A clickable **link to the current run**, for error alerts |
+<table>
+  <tr><th width="68%" align="left">Expression</th><th align="left">What you get</th></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Dates-0F6CBD?style=flat-square" alt="Dates">&nbsp; <b>🗓️ Dates &amp; time</b></td></tr>
+  <tr><td><code>formatDateTime(utcNow(), 'yyyy-MM-dd')</code></td><td>Today: <code>2026-10-10</code></td></tr>
+  <tr><td><code>convertTimeZone(utcNow(), 'UTC', 'Pakistan Standard Time', 'dd/MM/yyyy HH:mm')</code></td><td>Local time: <code>10/10/2026 18:30</code></td></tr>
+  <tr><td><code>addDays(utcNow(), -7)</code></td><td>The date a week ago</td></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Text-8661C5?style=flat-square" alt="Text">&nbsp; <b>🔤 Text</b></td></tr>
+  <tr><td><code>last(split(item()?['Email'], '@'))</code></td><td>Email domain: <code>contoso.com</code></td></tr>
+  <tr><td><code>decodeUriComponent('%0A')</code></td><td>A new line in text</td></tr>
+  <tr><td><code>formatNumber(1234.5, 'C2', 'en-US')</code></td><td>Currency: <code>$1,234.50</code></td></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Logic-CA5010?style=flat-square" alt="Logic">&nbsp; <b>🧠 Logic &amp; nulls</b></td></tr>
+  <tr><td><code>coalesce(item()?['Nickname'], item()?['FirstName'], 'there')</code></td><td>The first value that isn't empty</td></tr>
+  <tr><td><code>if(empty(x), 'N/A', x)</code></td><td>A default for blanks</td></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Arrays-107C10?style=flat-square" alt="Arrays">&nbsp; <b>📦 Arrays</b></td></tr>
+  <tr><td><code>length(body('Filter_array'))</code></td><td>Number of matching items</td></tr>
+  <tr><td><code>join(body('Select_emails'), ';')</code></td><td>Array → <code>a@x.com;b@y.com</code></td></tr>
+  <tr><td><code>split('a,b,c', ',')</code></td><td>Text → <code>["a","b","c"]</code></td></tr>
+  <tr><td><code>union(variables('Arr'), variables('Arr'))</code></td><td>Duplicates removed</td></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Dataverse-038387?style=flat-square" alt="Dataverse">&nbsp; <b>🗃️ Dataverse</b></td></tr>
+  <tr><td><code>first(outputs('List_rows')?['body/value'])?['name']</code></td><td>First row, no <i>Apply to each</i></td></tr>
+  <tr><td><code>item()?['_ownerid_value@OData.Community.Display.V1.FormattedValue']</code></td><td>Lookup <b>display name</b>, not the GUID</td></tr>
+  <tr><td colspan="2"><img src="https://img.shields.io/badge/Flow-D13438?style=flat-square" alt="Flow">&nbsp; <b>🔗 Flow &amp; run info</b></td></tr>
+  <tr><td><code>concat('https://make.powerautomate.com/environments/', workflow()?['tags']?['environmentName'], '/flows/', workflow()?['name'], '/runs/', workflow()?['run']?['name'])</code></td><td>A clickable <b>link to this run</b>, for error alerts</td></tr>
+</table>
 
 <p align="right"><a href="docs/01-expressions-cheatsheet.md">See the full cheat sheet →</a></p>
 
